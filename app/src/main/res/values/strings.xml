@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Calculator_Layout</string>
+    <string name="mc.s">MC</string>
+    <string name="mr.s">MR</string>
+    <string name="ms.s">MS</string>
+    <string name="mp.s">M+</string>
+    <string name="mm.s">M-</string>
+    <string name="backspace.s">\u21E4</string>
+    <string name="ce.s">CE</string>
+    <string name="c.s">C</string>
+    <string name="plmi.s">\u00B1</string>
+    <string name="sqroot.s">\u221A</string>
+    <string name="perc.s">%</string>
+    <string name="multi.s">*</string>
+    <string name="div.s">/</string>
+    <string name="oneover.s">1/x</string>
+    <string name="minus.s">-</string>
+    <string name="plus.s">+</string>
+    <string name="point.s">.</string>
+    <string name="equals.s">=</string>
+    <string name="one.s">1</string>
+    <string name="two.s">2</string>
+    <string name="three.s">3</string>
+    <string name="four.s">4</string>
+    <string name="five.s">5</string>
+    <string name="six.s">6</string>
+    <string name="seven.s">7</string>
+    <string name="eight.s">8</string>
+    <string name="nine.s">9</string>
+    <string name="zero.s">0</string>
+</resources>

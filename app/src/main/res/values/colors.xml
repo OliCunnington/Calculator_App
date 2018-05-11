@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="activated">#99ffff</color>
+    <color name="special_button">#ff9900</color>
+    <color name="black">#000</color>
+    <color name="light_grey">#ccc</color>
+    <color name="dark_grey">#aaa</color>
+    <color name="activated_dark">#33ffff</color>
+    <color name="activated_special">#ff5500</color>
+
+</resources>
