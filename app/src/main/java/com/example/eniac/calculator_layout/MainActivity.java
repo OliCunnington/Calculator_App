@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         int id = v.getId();
         switch (id){
             case R.id.c_btn: case R.id.ce_btn: txtV.setText(""); break;
-            case R.id.minus_btn: case R.id.plus_btn: case R.id.div_btn: case R.id.multi_btn: {
+            case R.id.minus_btn: case R.id.plus_btn: case R.id.div_btn: case R.id.multi_btn: case R.id.point_btn:{
                 Button btn = (Button) v;
                 String str = btn.getText().toString();
                 txtV.setText(txt + str);
@@ -61,14 +61,11 @@ public class MainActivity extends AppCompatActivity {
         TextView txtV = findViewById(R.id.display);
         String str = txtV.getText().toString();
         txtV.setText("");
-        Toast toast = Toast.makeText(this, str, Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.TOP,0,5);
-        toast.show();
         if (Character.isDigit(str.charAt(str.length()-1))) {
             doCalculation(str);
         }
         else {
-            toast = Toast.makeText(this, "Please enter a Number at the end of the calculation", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Please enter a Number at the end of the calculation", Toast.LENGTH_SHORT);
             toast.show();
         }
     }
@@ -80,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         StringBuilder strB = new StringBuilder();
         int i=0;
         for(;i<chars.length;i++){
-            if(Character.isDigit(chars[i])) strB.append((Character)chars[i]);
+            if(Character.isDigit(chars[i])||chars[i]=='.') strB.append((Character)chars[i]);
             else if(chars[i]=='+'||chars[i]=='-'||chars[i]=='*'||chars[i]=='/'){
                 operaters.add(chars[i]);
                 ints.add(ints.size(), Double.parseDouble(strB.toString()));
@@ -106,7 +103,9 @@ public class MainActivity extends AppCompatActivity {
         }
         result = ints.get(0);
 
-        Toast.makeText(this,result+"",Toast.LENGTH_SHORT).show();
+        Toast toast = Toast.makeText(this, result+"", Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.TOP,0,5);
+        toast.show();
 
     }
 
